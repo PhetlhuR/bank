@@ -13,8 +13,13 @@ while True:
         print("Invalid account number. It must be EXACTLY 10 digits.")
     print ("Account number must be EXACTLY 10 digits")  
 sendamount = float(input("Enter the amount to send: "))
-if sendamount < balance:
+if sendamount > balance:
     print("Insufficient funds!")
+    #wait 3 seconds and go to back to the main menu
+    import time
+    time.sleep(3)
+    import bankAccount
+    
 else:
     balance -= sendamount
     print(f"Sending {sendamount} to account number {accnum}...\n")
