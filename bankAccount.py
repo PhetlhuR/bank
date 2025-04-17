@@ -1,4 +1,5 @@
-# Bank account program
+#checking if pushed into github
+## Bank account program
 
 balance = float(input("Enter your initial balance: "))
 
